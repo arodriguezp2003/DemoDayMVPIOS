@@ -19,6 +19,13 @@
 		35AA0EE823805875009A8ADD /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EE623805875009A8ADD /* ClientViewController.swift */; };
 		35AA0EE923805875009A8ADD /* ClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AA0EE723805875009A8ADD /* ClientViewController.xib */; };
 		35AA0EEB238059CB009A8ADD /* ClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EEA238059CB009A8ADD /* ClientFactory.swift */; };
+		35AA0EEF238062FB009A8ADD /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EED238062FB009A8ADD /* ClientTableViewCell.swift */; };
+		35AA0EF0238062FB009A8ADD /* ClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AA0EEE238062FB009A8ADD /* ClientTableViewCell.xib */; };
+		35AA0EF32380B710009A8ADD /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EF22380B710009A8ADD /* DetailModel.swift */; };
+		35AA0EF52380B796009A8ADD /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EF42380B796009A8ADD /* DetailPresenter.swift */; };
+		35AA0EFA2380B85B009A8ADD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EF82380B85B009A8ADD /* DetailViewController.swift */; };
+		35AA0EFB2380B85B009A8ADD /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AA0EF92380B85B009A8ADD /* DetailViewController.xib */; };
+		35AA0EFD2380B8E1009A8ADD /* DetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0EFC2380B8E1009A8ADD /* DetailFactory.swift */; };
 		75A50851257ED6CED8D299FB /* Pods_Demoday2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128DFD2AF0BF40F0E98DD87A /* Pods_Demoday2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +56,13 @@
 		35AA0EE623805875009A8ADD /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		35AA0EE723805875009A8ADD /* ClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientViewController.xib; sourceTree = "<group>"; };
 		35AA0EEA238059CB009A8ADD /* ClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientFactory.swift; sourceTree = "<group>"; };
+		35AA0EED238062FB009A8ADD /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		35AA0EEE238062FB009A8ADD /* ClientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientTableViewCell.xib; sourceTree = "<group>"; };
+		35AA0EF22380B710009A8ADD /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		35AA0EF42380B796009A8ADD /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		35AA0EF82380B85B009A8ADD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		35AA0EF92380B85B009A8ADD /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		35AA0EFC2380B8E1009A8ADD /* DetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFactory.swift; sourceTree = "<group>"; };
 		40C04061C25FB229C1904A7E /* Pods-Demoday2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demoday2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Demoday2Tests/Pods-Demoday2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77E3CF238B53B4DDC09E30DF /* Pods-Demoday2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demoday2.release.xcconfig"; path = "Target Support Files/Pods-Demoday2/Pods-Demoday2.release.xcconfig"; sourceTree = "<group>"; };
 		A863F2A296766DC17D5291E0 /* Pods-Demoday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demoday2.debug.xcconfig"; path = "Target Support Files/Pods-Demoday2/Pods-Demoday2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +144,7 @@
 		35AA0ED623805293009A8ADD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				35AA0EF12380B6F3009A8ADD /* Detail */,
 				35AA0EDB238052C4009A8ADD /* Client */,
 			);
 			path = Features;
@@ -163,6 +178,7 @@
 		35AA0EDA238052B1009A8ADD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35AA0EEC238062DF009A8ADD /* Cells */,
 				35AA0EE623805875009A8ADD /* ClientViewController.swift */,
 				35AA0EE723805875009A8ADD /* ClientViewController.xib */,
 			);
@@ -178,6 +194,27 @@
 				35AA0EEA238059CB009A8ADD /* ClientFactory.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		35AA0EEC238062DF009A8ADD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				35AA0EED238062FB009A8ADD /* ClientTableViewCell.swift */,
+				35AA0EEE238062FB009A8ADD /* ClientTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		35AA0EF12380B6F3009A8ADD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				35AA0EF22380B710009A8ADD /* DetailModel.swift */,
+				35AA0EF42380B796009A8ADD /* DetailPresenter.swift */,
+				35AA0EF82380B85B009A8ADD /* DetailViewController.swift */,
+				35AA0EF92380B85B009A8ADD /* DetailViewController.xib */,
+				35AA0EFC2380B8E1009A8ADD /* DetailFactory.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		7BBCA0C3CF8A013F5AB5254F /* Pods */ = {
@@ -276,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AA0EC123805137009A8ADD /* LaunchScreen.storyboard in Resources */,
+				35AA0EF0238062FB009A8ADD /* ClientTableViewCell.xib in Resources */,
+				35AA0EFB2380B85B009A8ADD /* DetailViewController.xib in Resources */,
 				35AA0EBE23805137009A8ADD /* Assets.xcassets in Resources */,
 				35AA0EE923805875009A8ADD /* ClientViewController.xib in Resources */,
 			);
@@ -368,11 +407,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AA0EFA2380B85B009A8ADD /* DetailViewController.swift in Sources */,
+				35AA0EFD2380B8E1009A8ADD /* DetailFactory.swift in Sources */,
 				35AA0EE3238055EB009A8ADD /* ClientModel.swift in Sources */,
 				35AA0EDF2380545B009A8ADD /* Entities.swift in Sources */,
 				35AA0EE523805780009A8ADD /* ClientPresenter.swift in Sources */,
+				35AA0EF52380B796009A8ADD /* DetailPresenter.swift in Sources */,
+				35AA0EF32380B710009A8ADD /* DetailModel.swift in Sources */,
 				35AA0EB723805136009A8ADD /* AppDelegate.swift in Sources */,
 				35AA0EE1238054AF009A8ADD /* ClientService.swift in Sources */,
+				35AA0EEF238062FB009A8ADD /* ClientTableViewCell.swift in Sources */,
 				35AA0EE823805875009A8ADD /* ClientViewController.swift in Sources */,
 				35AA0EEB238059CB009A8ADD /* ClientFactory.swift in Sources */,
 			);
